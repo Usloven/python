@@ -1,6 +1,10 @@
+num = int(input())
+result=0
+if num > 0:
+    for i in range(num+1):
+       result=result+i
 
-Num = int(input())
-k=0
-for i in range(Num+1):
-    k=k+i
-print (k)
+else:
+    for i in range(num,0):
+           result=result+i
+print(result)
