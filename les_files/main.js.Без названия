@@ -1,0 +1,47 @@
+$('#members-row').ready(function () {
+    $('#members-row').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: true,
+        prevArrow: '<button type="button" class="btn btn-link slick-prev"><img src="/img/arrow-left.png"></button>',
+        nextArrow: '<button type="button" class="btn btn-link slick-next"><img src="/img/arrow-right.png"></button>',
+        slidesToShow: 3,
+        slidesPerRow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    }).show();
+
+    $('.slick-slide').removeClass('slick-slide-preloader');
+});

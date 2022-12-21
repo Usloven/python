@@ -7,8 +7,9 @@ print((k))
 
 age=int(input())
 index = 0
-while age<k[index]:
+
+print (k[3])
+while age>k[index]:
     index=index+1
- 
-    
-print (index+1)
+    res = index
+print (res)
